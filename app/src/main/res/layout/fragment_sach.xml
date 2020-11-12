@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+
+
+    android:layout_height="wrap_content">
+
+
+        <EditText
+            android:layout_width="300sp"
+            android:layout_height="50dp"
+            android:id="@+id/edSearchBook"
+            android:layout_marginTop="8dp"
+
+
+            android:hint="Tìm kiếm"/>
+
+
+        <Button
+            android:layout_alignParentRight="true"
+            android:layout_toRightOf="@id/edSearchBook"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+
+            android:id="@+id/btnTim"
+            android:background="@drawable/round_bg"
+            android:text="Tìm"
+            />
+
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_pl"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/edSearchBook"
+
+        tools:listitem="@layout/item_sach" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fl_sach"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:layout_marginTop="630dp"
+        android:layout_marginLeft="345dp"
+
+
+        android:src="@drawable/icons8_add_new_30px_2" />
+
+
+</RelativeLayout>
